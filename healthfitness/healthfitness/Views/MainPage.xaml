@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:healthfitness"
+             xmlns:ffsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             x:Class="healthfitness.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <MasterDetailPage.Master>
+        <ContentPage  BackgroundColor="#e8e8e8" Title="Master">
+            <StackLayout Orientation="Vertical">
+                <StackLayout>
+                    <Label Text="{Binding Header}"/>
+                    <Image Source="{Binding Image}" Aspect="Fill" />
+                    <Label Text="{Binding Footer}"/>
+                </StackLayout>
+                <ListView x:Name="navigationDrawerList" 
+                          RowHeight="55"
+                          SeparatorVisibility="Default"
+                          BackgroundColor="#e8e8e8"
+                          ItemSelected="onMenuItemSelected">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout VerticalOptions="FillAndExpand"
+                                             Orientation="Horizontal"
+                                             Padding="20,10,0,10"
+                                             Spacing="20">
+                                    <Image Source="{Binding Icon}"
+                                           WidthRequest="40"
+                                           HeightRequest="40"
+                                           VerticalOptions="Start"/>
+                                    <Label Text="{Binding Title}"
+                                           FontSize="Small"
+                                           VerticalOptions="End"
+                                           TextColor="Black"/>
+
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            
+            
+            <!--<ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Main Menu">
+                    </Label>
+                    <Image Source="ckickhere.png">
+                        <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTappedSelect"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Button Text="Profile" BackgroundColor="#30336b" TextColor="White" Clicked="goToProfile"/>
+                    <Button Text="Gym Workout" BackgroundColor="#30336b" TextColor="White" Clicked="goToGymWorkout"/>
+                    <Button Text="Home Workout" BackgroundColor="#30336b" TextColor="White" Clicked="goToHomeWorkout"/>
+                    <Button Text="diet Plan" BackgroundColor="#30336b" TextColor="White" Clicked="goToDietplan"/>
+                    <Button Text="BMI Calculator" BackgroundColor="#30336b" TextColor="White" Clicked="goToGymWorkout"/>
+                    <Button Text="Logout" BackgroundColor="#30336b"  TextColor="White" Clicked="goToLogout"/>
+                </StackLayout>
+            </ContentPage.Content>-->
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage Padding="10">
+            <ContentPage.Content>
+                <StackLayout BackgroundColor="#485460">
+
+
+                    <StackLayout BackgroundColor="#485460" HorizontalOptions="FillAndExpand" >
+                        <Label TextColor="White" Text="FitnessForU" HorizontalOptions="CenterAndExpand" Font="Bold, Italic, 72"/>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="#485460" HorizontalOptions="FillAndExpand">
+                        <Image Source="fitness.jpg" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="#485460" HorizontalOptions="FillAndExpand">
+                        <Label TextColor="White" Text="C'mon Lets Start" HorizontalOptions="CenterAndExpand" Font="Bold, Italic, 72"/>
+                    </StackLayout>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>

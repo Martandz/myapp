@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthfitness.Views.chooseTrainer"
+             xmlns:controls1="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="Choose_Trainer" Title="Select Trainer" SelectedIndexChanged="selectTrainer" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>Amit Khanna</x:String>
+                    <x:String>Sudhir Sharma</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <ScrollView>
+                <StackLayout>
+                    <controls1:CircleImage x:Name="Profile" Source="Person_1.jpg" VerticalOptions="Start" HeightRequest="30" WidthRequest="30"></controls1:CircleImage>
+
+                    <Label x:Name="Trainer_Name" Text="my" HorizontalOptions="CenterAndExpand"/>
+                    <Label x:Name="Trainer_Clients" Text="25" HorizontalOptions="CenterAndExpand"/>
+                    <Label x:Name="Trainer_Qualification" Text="M Ped" HorizontalOptions="CenterAndExpand"/>
+                    <Label x:Name="Trainer_Achievements" Text="Certification in Body building" HorizontalOptions="CenterAndExpand"/>
+                    <Label x:Name="Trainer_Description" Text="We are looking for a Training 
+                           Specialist to enhance the competencies of individual employees 
+                           by designing and conducting training programs that will boost 
+                           employees workplace performance in alliance with company's core 
+                           values. You will be responsible for performing training needs 
+                           assessments, designing and delivering curriculum and learning 
+                           materials and for managing all phases of training interventions." 
+                           HorizontalOptions="CenterAndExpand"/>
+                    
+                </StackLayout>
+            </ScrollView>
+            <Button x:Name="iamtrainer" Text="Select" Clicked="AddTrainertoDB"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

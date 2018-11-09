@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:healthfitness.Models"
+             xmlns:view="clr-namespace:healthfitness.Views"
+             x:Class="healthfitness.Views.TrainerPage">
+    <ContentPage.BindingContext>
+        <viewModel:TrainerViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout Orientation="Vertical">
+        <Label Text="USER STORIES"
+               VerticalOptions="Start"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               BackgroundColor="Transparent"
+               HorizontalOptions="CenterAndExpand"/>
+        <ListView x:Name="listview" SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                  RowHeight="150"
+                  ItemsSource="{Binding CardDataCollection}" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <view:TrainerView/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+</ContentPage>

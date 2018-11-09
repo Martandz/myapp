@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthfitness.Views.chest"
+             xmlns:ffsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             Title="chest_workout">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="350"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                </Grid.RowDefinitions>
+                <StackLayout Padding="0,0,0,0">
+                    <ff:CachedImage x:Name="Gif" 
+                    Source="chest.gif" 
+                    
+                    Grid.Row="0" 
+                    Grid.Column="0" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"/>
+
+                    <Label x:Name="MyLabel" 
+                           Font="Bold, Italic, 72"
+                    Text="0" 
+                    FontSize="Large"
+                    Grid.Row="1" 
+                    Grid.Column="0" 
+                    HorizontalOptions="CenterAndExpand" 
+                    VerticalOptions="CenterAndExpand"/>
+                    
+                    <Button x:Name="Btn_count" 
+                         Grid.Row="2" 
+                    Grid.Column="0"    
+                    WidthRequest="120" 
+                            HeightRequest="120" 
+                            BorderRadius="60"
+                            HorizontalOptions="CenterAndExpand" 
+                    VerticalOptions="CenterAndExpand"
+                            Clicked="getCount" Text="Lets START"/>
+                </StackLayout>
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthfitness.Views.register">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout BackgroundColor="White">
+            
+            <Label Text="Register"
+                
+                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="Entry_Name" Placeholder="Name" TextColor="Blue"/>
+                <Entry x:Name="Entry_Email" Placeholder="Email" TextColor="Blue" />
+                <Entry x:Name="Entry_Password" Placeholder="Password" TextColor="Blue" />
+                <Entry x:Name="Entry_Height" Placeholder="Height" TextColor="Blue" />
+                <Entry x:Name="Entry_Weight" Placeholder="Weight" TextColor="Blue" />
+                <Entry x:Name="Phone" Placeholder="Phone" TextColor="Blue" />
+                <Entry x:Name="Country" Placeholder="Country" TextColor="Blue" />
+                <Entry x:Name="State" Placeholder="State" TextColor="Blue" />
+                <Entry x:Name="City" Placeholder="City" TextColor="Blue" />
+                <Entry x:Name="Pincode" Placeholder="Pincode" TextColor="Blue" />
+                <Button x:Name="Btn_register" Text="Submit" FontSize="Small" 
+                        Clicked="goToLogin"
+                        TextColor="White" BackgroundColor="#1e90ff"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

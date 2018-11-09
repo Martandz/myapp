@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthfitness.gymworkout"
+             
+             Title="gymworkout">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#1e90ff">
+            <Grid BackgroundColor="Black">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                </Grid.RowDefinitions>
+                <Button 
+                    x:Name="Btn_Chest"
+                    Text="Chest"
+                    TextColor="YellowGreen"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    Clicked="goToChest"
+                    BackgroundColor="Transparent"
+                    
+                    Grid.Row="0" 
+                    Grid.Column="0" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"/>
+                <Button 
+                    x:Name="Btn_Shoulder"
+                    Text="Shoulder"
+                    TextColor="YellowGreen"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="Transparent"
+                    Clicked="goToShoulder"
+                    Grid.Row="0" 
+                    Grid.Column="1" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"/>
+                <Button x:Name="Btn_Back"
+                    Text="Back"
+                    TextColor="YellowGreen"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="Transparent"
+                    Clicked="goToBack"
+                    Grid.Row="1" 
+                    Grid.Column="0" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"/>
+                <Button 
+                    x:Name="Btn_Arms"
+                    Text="Arms"
+                    TextColor="YellowGreen"
+                    Clicked="goToArms"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="Transparent"
+                    Grid.Row="1" 
+                    Grid.Column="1" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"/>
+                <Button 
+                    Text="Abdomen"
+                    TextColor="YellowGreen"
+                    Clicked="goToAbdomen"
+                    Grid.Row="2" 
+                    Grid.Column="0" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="Transparent"
+                    />
+                <Button x:Name="Legs" 
+                    TextColor="YellowGreen"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="Transparent"                    
+                    Clicked="goToLegs"
+                    Text="Legs"
+                    Grid.Row="2" 
+                    Grid.Column="1" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthfitness.Views.LoginPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout x:Name="MasterLayout">
+
+        <StackLayout x:Name="ft" VerticalOptions="FillAndExpand">
+
+            <Label TextColor="White" Text="FitnessForU" HorizontalOptions="CenterAndExpand" Font="Bold, Italic, 62"/>
+
+        </StackLayout>
+        <StackLayout x:Name="LogoStack" VerticalOptions="FillAndExpand" BackgroundColor="Black">
+
+            <Image x:Name="LoginIcon" 
+                   Source="fitness.jpg"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width }"/>
+
+        </StackLayout>
+
+
+        <StackLayout x:Name="LoginEntriesStack" Padding="40,0,40,40" >
+            <Label Text="This is Client Mode" FontSize="10" />
+            <Button x:Name="btn_client" BackgroundColor="Transparent"  Text="Client" HeightRequest="35" FontSize="10" TextColor="YellowGreen"/>
+            <ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="True" />
+            <Label x:Name="Lbl_Username"  Text="Username" TextColor="White"/>
+            <Entry x:Name="Entry_Username" Placeholder="Username" TextColor="White"/>
+            <Label x:Name="Lbl_Password"  Text="Password"/>
+            <Entry x:Name="Entry_Password" IsPassword="True" TextColor="White" Placeholder="Password" />
+            <FlexLayout >
+                <Button x:Name="Btn_Singin"  TextColor="White" FontSize="Small" BackgroundColor="#0fbcf9" Text="Signin" Clicked="SignInProcedure"/>
+            <Button x:Name="Btn_register" Text="Register" 
+                    BackgroundColor="#0fbcf9" 
+                    TextColor="White"
+                    FontSize="Small"
+                      Clicked="RegisterProcedure"/>
+            </FlexLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

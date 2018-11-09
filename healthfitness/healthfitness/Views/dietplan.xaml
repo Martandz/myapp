@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthfitness.dietplan"
+             
+             Title="dietplan">
+    <ContentPage.Content>
+        
+        <StackLayout BackgroundColor="#1e90ff">
+            <Grid BackgroundColor="Black">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="300"/>
+
+                </Grid.RowDefinitions>
+                <Button x:Name="mydiet" 
+                    TextColor="YellowGreen"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    Grid.Row="0"
+                    BackgroundColor="Transparent"
+                    Clicked="myDietPlan" Text="My Diet"/>
+                <Button x:Name="alldiet" 
+                    TextColor="YellowGreen"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    Grid.Row="1"
+                    BackgroundColor="Transparent"
+                    Clicked="allDietPlan" Text="All Diet"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

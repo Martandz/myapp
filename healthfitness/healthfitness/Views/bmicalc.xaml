@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthfitness.Views.bmicalc">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="BMI Calculator" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="Height" Placeholder="Enter your height in mtr"/>
+            <Entry x:Name="Weight" Placeholder="Enter your wieght in Kg"/>
+            <Label x:Name="yourbmi" Text="0" HorizontalOptions="CenterAndExpand"/>
+            <Label x:Name="yourCategory" Text="Your category" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="calcbmi" Text="Calculate" Clicked="calculateBMI"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

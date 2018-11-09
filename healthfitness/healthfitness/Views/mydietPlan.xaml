@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthfitness.Views.mydietPlan">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+            <Label Text="Diet Plan 1" HorizontalOptions="FillAndExpand" TextColor="YellowGreen" FontSize="Large"/>
+            <ScrollView>
+                <StackLayout BackgroundColor="Black">
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="05:00-06:00 --- Wake up time and Meditate" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="06:00-07:00 --- Workout at gym" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="07:00-08:00 --- Break fast with fruit juice and omlete" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="08:00-09:00 --- office" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="09:00-10:00 --- office" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="10:00-11:00 --- office" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="11:00-12:00 --- office" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="12:00-13:00 --- Lunch boiled chicken and rice" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="13:00-14:00 --- Rest" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="14:00-15:00 --- office" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="15:00-16:00 --- office" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="16:00-17:00 --- Snacks fruit apple and egg white" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="17:00-18:00 --- Cycling" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="18:00-19:00 --- Rest" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="19:00-20:00 --- Dinner 6 egg white and brown bread" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="20:00-21:00 --- got to bed" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="21:00-22:00 --- got to bed" HorizontalOptions="FillAndExpand"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Yellow" Text="22:00-23:00 --- got to bed" HorizontalOptions="FillAndExpand"/>
+
+                </StackLayout>
+
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

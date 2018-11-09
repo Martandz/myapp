@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="healthfitness.Views.burpees"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             Title="burpees">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="350"/>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+
+                </Grid.RowDefinitions>
+                <StackLayout Padding="0,0,0,0">
+                    <ff:CachedImage x:Name="Gif" 
+                    Source="burpees.gif" 
+                    
+                    Grid.Row="0" 
+                    Grid.Column="0" 
+                    HorizontalOptions="FillAndExpand" 
+                    VerticalOptions="FillAndExpand"/>
+
+                    <Label x:Name="MyLabel" 
+                    Font="Bold, Italic, 72"
+                    Text="0" 
+                    Grid.Row="1" 
+                    Grid.Column="0" 
+                    HorizontalOptions="CenterAndExpand" 
+                    VerticalOptions="CenterAndExpand"/>
+
+                    <Button x:Name="Btn_count" 
+                             
+                            Clicked="getCount" Text="Lets START"
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            WidthRequest="120" 
+                            HeightRequest="120" 
+                            BorderRadius="60"
+                            HorizontalOptions="CenterAndExpand" 
+                    VerticalOptions="CenterAndExpand"/>
+
+
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
